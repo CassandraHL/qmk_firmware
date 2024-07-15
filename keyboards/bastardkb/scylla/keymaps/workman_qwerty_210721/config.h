@@ -1,0 +1,14 @@
+#pragma once
+
+#undef MASTER_RIGHT
+#define MASTER_LEFT
+
+#define TAPPING_TOGGLE 2
+
+#define LAYER_STATE_8BIT // Helps reduce file size
+
+#undef RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+#undef RGBLIGHT_LIMIT_VAL
+#define RGBLIGHT_LIMIT_VAL 100
