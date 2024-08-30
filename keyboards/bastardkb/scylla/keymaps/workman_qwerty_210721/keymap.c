@@ -14,6 +14,7 @@
  * Updated RESET to QK_BOOT
  * Fixed base layer lighting
  * Added KC_NUBS for `¬
+ * Added KVM switch
  */
 
 
@@ -23,6 +24,7 @@
 #define SSHOT LSFT(LCTL(LGUI(KC_4)))
 #define EURO LALT(LSFT(KC_2))
 #define MACLOCK LGUI(LCTL(KC_Q)) // Lock my MacBook
+#define KVM LGUI(LCTL(KC_GRV)) // Toggle monitor input source
 
 
 enum custom_keycodes {
@@ -139,7 +141,7 @@ enum layer_names {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_BASE] = LAYOUT_split_4x6_5(
 
-	    KC_ESC,     KC_1,    KC_2,   G(KC_C),   G(KC_V),    G(KC_X),                MACLOCK,    KC_MRWD,    KC_MPLY,    KC_MFFD,    KC_VOLD,    KC_VOLU,
+	    KC_ESC,     KC_1,    KC_2,   G(KC_C),   G(KC_V),    G(KC_X),                KVM,    KC_MRWD,    KC_MPLY,    KC_MFFD,    KC_VOLD,    KC_VOLU,
 	    KC_TAB,     KC_Q,    KC_D,   KC_R,      KC_W,       KC_B,                   KC_J,       KC_F,       KC_U,       KC_P,       KC_SCLN,    KC_NUBS,
 	    KC_CAPS,    KC_A,    KC_S,   KC_H,      KC_T,       KC_G,                   KC_Y,       KC_N,       KC_E,       KC_O,       KC_I,       KC_QUOT,
 	    KC_LSFT,    KC_Z,    KC_X,   KC_M,      KC_C,       KC_V,                   KC_K,       KC_L,       KC_COMM,    KC_DOT,     KC_SLSH,    KC_ENT,
