@@ -24,7 +24,7 @@
 #define SSHOT LSFT(LCTL(LGUI(KC_4)))
 #define EURO LALT(LSFT(KC_2))
 #define MACLOCK LGUI(LCTL(KC_Q)) // Lock my MacBook
-#define KVM LGUI(LCTL(KC_GRV)) // Toggle monitor input source
+#define KVM LALT(LCTL(KC_GRV)) // Toggle monitor input source
 
 
 enum custom_keycodes {
